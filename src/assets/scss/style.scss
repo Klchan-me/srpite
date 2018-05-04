@@ -1,0 +1,18 @@
+@mixin sprite($dir,$name){
+    background-image: url("../sprite/#{$dir}/#{$name}.png?_sprite");
+}
+
+.box{
+    @include sprite('icon','love');
+}
+.icon_like{
+    @include sprite('icon','like');
+}
+
+.qq{
+    @include sprite('login','qq');
+}
+
+.wechat{
+    @include sprite('login','wechat');
+}
